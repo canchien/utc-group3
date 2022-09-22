@@ -1,0 +1,51 @@
+#category_data_wrapper{
+    position: relative;
+}
+.loading {
+    text-align: center;
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0px auto;
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    box-shadow: 3px 3px 10px 1px #000000d1;
+    z-index: 1;
+}
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid rgb(32, 236, 32);
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+.loading p{color: rgb(32, 236, 32);font-variant: small-caps;font-size: 3em;font-weight: bold;}

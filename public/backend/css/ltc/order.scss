@@ -1,0 +1,111 @@
+#data_table {
+  thead {
+    tr {
+      th {
+        background: #3c8dbc;
+        text-align: center;
+        border: none;
+        color: #f2f2f2;
+        font-variant: small-caps;
+      }
+      th:nth-child(1) {
+        width: 3% !important;
+      }
+      th:nth-child(2) {
+        width: 8% !important;
+      }
+      th:nth-child(3) {
+        width: 10% !important;
+      }
+      th:nth-child(4) {
+        width: 6% !important;
+      }
+      th:nth-child(5) {
+        width: 7% !important;
+      }
+      th:nth-child(6) {
+        width: calc(100% - 66%) !important;
+      }
+      th:nth-child(7) {
+        width: 15% !important;
+      }
+      th:nth-child(8) {
+        width: 15% !important;
+      }
+    }
+  }
+  tbody {
+    tr {
+      // transition: 0.25s all ease-out;
+      
+      td {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: calc(25px + 16px) !important;
+        vertical-align: middle;
+        border: none;
+        .btn-delete {
+          transition: all 0.3s ease-out;
+          &:hover {
+            background: #ff2323 !important;
+          }
+        }
+        .image-update {
+          background: #19af32;
+          transition: all 0.3s ease-out;
+          &:hover {
+            background: #168228;
+          }
+        }
+      }
+      &:hover {
+        background: #f2f2f2;
+        // box-shadow: 0px 0px 10px 0px rgba(46, 255, 0, 0.4);
+      }
+      td:nth-child(2),
+      td:nth-child(5),
+      td:nth-child(7) {
+        text-align: center;
+      }
+      td:nth-child(7) {
+        p {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-height: calc(25px + 16px) !important;
+        }
+        i {
+            font-size: 10px;
+            border-radius: 50%;
+        }
+      }
+      td:nth-child(6) {
+        max-width: calc(25px + 16px) !important;
+      }
+    }
+    tr.selected {
+      background: #f2f2f2;
+      // box-shadow: 0px 0px 10px 0px rgba(46, 255, 0, 0.4);
+    }
+  }
+}
+
+.btn-accept {
+    &:hover {
+        background: #00be03 !important;
+    }
+}
+.btn-denied {
+    &:hover {
+        background: #e66969 !important;
+    }
+}
+.btn-status {
+    &:hover {
+        background: #fdb16f !important;
+    }
+}
+._th_checkbox {
+    .checkbox {
+        margin: 0 !important;
+    }
+}

@@ -1,0 +1,68 @@
+#data_table thead tr th {
+  background: #3c8dbc;
+  text-align: center;
+  border: none;
+  color: #f2f2f2;
+  font-variant: small-caps; }
+#data_table thead tr th:nth-child(1) {
+  width: 3% !important; }
+#data_table thead tr th:nth-child(2) {
+  width: 8% !important; }
+#data_table thead tr th:nth-child(3) {
+  width: 10% !important; }
+#data_table thead tr th:nth-child(4) {
+  width: 6% !important; }
+#data_table thead tr th:nth-child(5) {
+  width: 7% !important; }
+#data_table thead tr th:nth-child(6) {
+  width: calc(100% - 66%) !important; }
+#data_table thead tr th:nth-child(7) {
+  width: 15% !important; }
+#data_table thead tr th:nth-child(8) {
+  width: 15% !important; }
+#data_table tbody tr td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: calc(25px + 16px) !important;
+  vertical-align: middle;
+  border: none; }
+  #data_table tbody tr td .btn-delete {
+    transition: all 0.3s ease-out; }
+    #data_table tbody tr td .btn-delete:hover {
+      background: #ff2323 !important; }
+  #data_table tbody tr td .image-update {
+    background: #19af32;
+    transition: all 0.3s ease-out; }
+    #data_table tbody tr td .image-update:hover {
+      background: #168228; }
+#data_table tbody tr:hover {
+  background: #f2f2f2; }
+#data_table tbody tr td:nth-child(2),
+#data_table tbody tr td:nth-child(5),
+#data_table tbody tr td:nth-child(7) {
+  text-align: center; }
+#data_table tbody tr td:nth-child(7) p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: calc(25px + 16px) !important; }
+#data_table tbody tr td:nth-child(7) i {
+  font-size: 10px;
+  border-radius: 50%; }
+#data_table tbody tr td:nth-child(6) {
+  max-width: calc(25px + 16px) !important; }
+#data_table tbody tr.selected {
+  background: #f2f2f2; }
+
+.btn-accept:hover {
+  background: #00be03 !important; }
+
+.btn-denied:hover {
+  background: #e66969 !important; }
+
+.btn-status:hover {
+  background: #fdb16f !important; }
+
+._th_checkbox .checkbox {
+  margin: 0 !important; }
+
+/*# sourceMappingURL=order.css.map */
